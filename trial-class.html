@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Free Trial Class - BA Learn</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#0A1D56',
+            secondary: '#F5C518',
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-gray-50 font-sans text-gray-800">
+  <div class="max-w-4xl mx-auto py-16 px-4">
+    <h1 class="text-4xl font-bold text-primary text-center mb-6">Free Trial Class</h1>
+    <p class="text-center text-lg mb-10">
+      Coba kelas GRATIS dari BA-Learn! Rasakan suasana belajar menyenangkan bersama tutor terbaik kami tanpa biaya.
+    </p>
+
+    <section class="mb-10">
+      <h2 class="text-2xl font-semibold mb-4 text-primary">📆 Jadwal Trial</h2>
+      <ul class="space-y-2 text-lg">
+        <li>🟢 SD: Sabtu, 10.00 – 11.00 WIB</li>
+        <li>🟡 SMP: Sabtu, 13.00 – 14.30 WIB</li>
+        <li>🔵 SMA: Minggu, 09.00 – 10.30 WIB</li>
+      </ul>
+    </section>
+
+    <section class="mb-10">
+      <h2 class="text-2xl font-semibold mb-4 text-primary">📚 Yang Kamu Dapatkan</h2>
+      <ul class="list-disc ml-6 space-y-2 text-lg">
+        <li>1x sesi belajar gratis (offline/online)</li>
+        <li>Akses materi langsung dari tutor</li>
+        <li>Grup diskusi & tanya jawab interaktif</li>
+        <li>Diskon khusus jika lanjut paket belajar</li>
+      </ul>
+    </section>
+
+    <section class="mb-10">
+      <h2 class="text-2xl font-semibold mb-4 text-primary">📝 Daftar Trial Sekarang</h2>
+      <form action="Ucapan.html" method="get" class="bg-white p-6 rounded-xl shadow space-y-4">
+        <input type="text" name="nama" placeholder="Nama Lengkap" required class="w-full border px-4 py-2 rounded-md">
+        <input type="tel" name="telepon" placeholder="Nomor WhatsApp" required class="w-full border px-4 py-2 rounded-md">
+        <select name="jenjang" required class="w-full border px-4 py-2 rounded-md">
+          <option value="">-- Pilih Jenjang --</option>
+          <option value="SD">SD</option>
+          <option value="SMP">SMP</option>
+          <option value="SMA">SMA</option>
+        </select>
+        <select name="jadwal" required class="w-full border px-4 py-2 rounded-md">
+          <option value="">-- Pilih Jadwal --</option>
+          <option value="Sabtu 10.00">Sabtu 10.00 (SD)</option>
+          <option value="Sabtu 13.00">Sabtu 13.00 (SMP)</option>
+          <option value="Minggu 09.00">Minggu 09.00 (SMA)</option>
+        </select>
+        <button type="submit" class="w-full bg-primary text-white font-bold py-3 rounded-lg hover:bg-opacity-90 transition">
+          Coba Trial Gratis
+        </button>
+      </form>
+    </section>
+
+    <div class="text-center mt-10">
+      <a href="BA-learn-bagas.html" class="text-blue-600 hover:underline">← Kembali ke Beranda</a>
+    </div>
+  </div>
+</body>
+</html>
