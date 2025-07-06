@@ -1,2 +1,591 @@
-# website
-web
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BA - Learn | Blended Acceleration Learns</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#0A1D56',
+            secondary: '#F5C518',
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+    
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+    
+    .hero-section {
+      background: linear-gradient(rgba(10, 29, 86, 0.9), rgba(10, 29, 86, 0.8)), url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');
+      background-size: cover;
+      background-position: center;
+    }
+    
+    .card-hover:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    }
+    
+    .transition-smooth {
+      transition: all 0.3s ease;
+    }
+    
+    .testimonial-card {
+      background: linear-gradient(135deg, rgba(10, 29, 86, 0.05), rgba(245, 197, 24, 0.05));
+    }
+    
+    .location-badge {
+      position: absolute;
+      top: -10px;
+      right: -10px;
+      background: #F5C518;
+      color: #0A1D56;
+      border-radius: 50%;
+      width: 24px;
+      height: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+  <!-- Header/Navigation -->
+  <header class="bg-primary text-white sticky top-0 z-50 shadow-md">
+    <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+      <div class="flex items-center space-x-2">
+        <div class="bg-secondary text-primary p-2 rounded-lg font-bold text-xl">BA</div>
+        <span class="font-bold text-xl">Learn</span>
+      </div>
+      
+      <nav class="hidden md:flex space-x-8">
+        <a href="#" class="hover:text-secondary transition-smooth font-medium">Home</a>
+        <a href="#" class="hover:text-secondary transition-smooth font-medium">Programs</a>
+        <a href="#" class="hover:text-secondary transition-smooth font-medium">Membership</a>
+        <a href="#" class="hover:text-secondary transition-smooth font-medium">Pricing</a>
+        <a href="#" class="hover:text-secondary transition-smooth font-medium">Contact</a>
+      </nav>
+      
+      <div class="flex items-center space-x-4">
+        <div class="relative">
+          <i class="fas fa-map-marker-alt text-xl"></i>
+          <div class="location-badge">2</div>
+        </div>
+        <button class="bg-secondary text-primary px-4 py-2 rounded-lg font-medium hover:bg-opacity-90 transition-smooth hidden md:block">
+          Daftar Sekarang
+        </button>
+        <button class="md:hidden text-2xl">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section text-white py-20 md:py-32">
+    <div class="container mx-auto px-4 text-center">
+      <h1 class="text-4xl md:text-6xl font-bold mb-6">Cepat. Tepat. Paham.<br>Bukan Sekadar Hafal.</h1>
+      <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">Metode pembelajaran blended acceleration untuk siswa SD, SMP, dan SMA usia 6-18 tahun di Tambora & Jembatan Lima</p>
+      <div class="flex flex-col sm:flex-row justify-center gap-4">
+        <form action="trial-class.html" method="get">
+          <button type="submit" class="bg-secondary text-primary px-6 py-3 rounded-lg font-bold hover:bg-opacity-90 transition">
+            Try Free Trial Class
+          </button>
+        </form>
+
+        <form action="lihat-program.html" method="get">
+        <button type="submit" class="bg-primary text-white px-6 py-3 rounded-lg font-bold hover:bg-opacity-90 transition">
+          Lihat Program Kami
+        </button>
+</form>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- About BA-Learn Section -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="flex flex-col md:flex-row items-center gap-12">
+        <div class="md:w-1/2">
+          <h2 class="text-3xl font-bold mb-6 text-primary">Tentang BA-Learn</h2>
+          <p class="text-lg mb-6">BA-Learn adalah bimbingan belajar modern yang menyediakan pendekatan pembelajaran berbasis konsep dan pemahaman, bukan sekadar hafalan.</p>
+          
+          <div class="mb-8">
+            <h3 class="text-xl font-bold mb-4 text-primary">Visi Kami</h3>
+            <p class="mb-6">Menjadi bimbingan belajar terdepan yang menanamkan pemahaman konsep dan berpikir cepat, dengan ketepatan setara kecepatan dalam menyelesaikan soal.</p>
+            
+            <h3 class="text-xl font-bold mb-4 text-primary">Misi Kami</h3>
+            <ul class="space-y-3">
+              <li class="flex items-start"><i class="fas fa-check text-secondary mt-1 mr-3"></i> Mendorong siswa berpikir cepat dan tepat melalui latihan intensif</li>
+              <li class="flex items-start"><i class="fas fa-check text-secondary mt-1 mr-3"></i> Menyediakan materi pembelajaran yang fokus pada pemahaman konsep</li>
+              <li class="flex items-start"><i class="fas fa-check text-secondary mt-1 mr-3"></i> Mengembangkan layanan pembelajaran yang fleksibel, berbasis teknologi</li>
+              <li class="flex items-start"><i class="fas fa-check text-secondary mt-1 mr-3"></i> Membantu siswa mencapai target akademik secara optimal tanpa tekanan</li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="md:w-1/2">
+          <div class="bg-gray-100 p-6 rounded-xl">
+            <img src="https://images.unsplash.com/photo-1588072432836-e10032774350?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1472&q=80" 
+                 alt="BA-Learn Classroom" class="rounded-lg shadow-lg w-full">
+            <div class="mt-6 flex flex-wrap gap-4">
+              <div class="bg-primary text-white px-4 py-2 rounded-full text-sm">
+                <i class="fas fa-wifi mr-2"></i> WiFi 100Mbps
+              </div>
+              <div class="bg-primary text-white px-4 py-2 rounded-full text-sm">
+                <i class="fas fa-tv mr-2"></i> Android TV
+              </div>
+              <div class="bg-primary text-white px-4 py-2 rounded-full text-sm">
+                <i class="fas fa-users mr-2"></i> Tutor Berkualitas
+              </div>
+              <div class="bg-primary text-white px-4 py-2 rounded-full text-sm">
+                <i class="fas fa-map-marker-alt mr-2"></i> 2 Lokasi
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Units Section -->
+  <section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-12 text-primary">Jenjang Pendidikan</h2>
+      
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- SD Card -->
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover transition-smooth">
+          <div class="bg-primary p-6 text-white text-center">
+            <i class="fas fa-child text-4xl mb-4"></i>
+            <h3 class="text-2xl font-bold">SD (6-12 Tahun)</h3>
+          </div>
+          <div class="p-6">
+            <p class="mb-4">Membangun fondasi belajar yang kuat dengan metode menyenangkan</p>
+            <ul class="space-y-2">
+              <li class="flex items-center"><i class="fas fa-check text-secondary mr-2"></i> Matematika Dasar</li>
+              <li class="flex items-center"><i class="fas fa-check text-secondary mr-2"></i> Bahasa Indonesia</li>
+              <li class="flex items-center"><i class="fas fa-check text-secondary mr-2"></i> IPA Terpadu</li>
+            </ul>
+           <form action="jenjang-sd.html" method="get" class="mt-6">
+  <button type="submit" class="w-full bg-primary text-white py-2 rounded-lg font-bold hover:bg-opacity-90 transition-smooth">
+    Lihat Detail
+  </button>
+</form>
+
+          </div>
+        </div>
+        
+        <!-- SMP Card -->
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover transition-smooth">
+          <div class="bg-primary p-6 text-white text-center">
+            <i class="fas fa-user-graduate text-4xl mb-4"></i>
+            <h3 class="text-2xl font-bold">SMP (12-15 Tahun)</h3>
+          </div>
+          <div class="p-6">
+            <p class="mb-4">Mempersiapkan siswa menghadapi tantangan akademik yang lebih kompleks</p>
+            <ul class="space-y-2">
+              <li class="flex items-center"><i class="fas fa-check text-secondary mr-2"></i> Matematika Lanjut</li>
+              <li class="flex items-center"><i class="fas fa-check text-secondary mr-2"></i> IPA Terpisah</li>
+              <li class="flex items-center"><i class="fas fa-check text-secondary mr-2"></i> Bahasa Inggris</li>
+            </ul>
+            <form action="jenjang-smp.html" method="get" class="mt-6">
+  <button type="submit" class="w-full bg-primary text-white py-2 rounded-lg font-bold hover:bg-opacity-90 transition-smooth">
+    Lihat Detail
+  </button>
+</form>
+
+          </div>
+        </div>
+        
+        <!-- SMA Card -->
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover transition-smooth">
+          <div class="bg-primary p-6 text-white text-center">
+            <i class="fas fa-graduation-cap text-4xl mb-4"></i>
+            <h3 class="text-2xl font-bold">SMA (15-18 Tahun)</h3>
+          </div>
+          <div class="p-6">
+            <p class="mb-4">Fokus pada persiapan ujian nasional dan masuk perguruan tinggi</p>
+            <ul class="space-y-2">
+              <li class="flex items-center"><i class="fas fa-check text-secondary mr-2"></i> Matematika IPA/IPS</li>
+              <li class="flex items-center"><i class="fas fa-check text-secondary mr-2"></i> Fisika/Kimia/Ekonomi</li>
+              <li class="flex items-center"><i class="fas fa-check text-secondary mr-2"></i> Persiapan UTBK</li>
+            </ul>
+            <form action="jenjang-sma.html" method="get" class="mt-6">
+  <button type="submit" class="w-full bg-primary text-white py-2 rounded-lg font-bold hover:bg-opacity-90 transition-smooth">
+    Lihat Detail
+  </button>
+</form>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Program Clusters Section -->
+  <section class="py-16 bg-gray-50">
+  <div class="max-w-6xl mx-auto px-6">
+    <h2 class="text-3xl font-bold text-primary text-center mb-12">Program Unggulan</h2>
+    <div class="grid md:grid-cols-2 gap-8">
+
+      <!-- Reguler -->
+      <div class="bg-white shadow rounded-xl p-6 text-center">
+        <h3 class="text-xl font-bold text-primary mb-2">Program Reguler</h3>
+        <p class="text-gray-700 mb-4">Belajar sesuai kurikulum nasional, cocok untuk siswa SD–SMA.</p>
+        <a href="program-reguler.html" class="inline-block bg-primary text-white px-6 py-2 rounded-lg font-semibold hover:bg-opacity-90 transition">
+          Lihat Detail
+        </a>
+      </div>
+
+      <!-- Akselerasi -->
+      <div class="bg-white shadow rounded-xl p-6 text-center">
+        <h3 class="text-xl font-bold text-primary mb-2">Program Akselerasi</h3>
+        <p class="text-gray-700 mb-4">Belajar intensif untuk percepatan atau remedial dengan jadwal fleksibel.</p>
+        <a href="program-akselerasi.html" class="inline-block bg-primary text-white px-6 py-2 rounded-lg font-semibold hover:bg-opacity-90 transition">
+          Lihat Detail
+        </a>
+      </div>
+
+      <!-- International -->
+      <div class="bg-white shadow rounded-xl p-6 text-center">
+        <h3 class="text-xl font-bold text-primary mb-2">Program International</h3>
+        <p class="text-gray-700 mb-4">Belajar dengan kurikulum Cambridge/IB dan tutor bilingual.</p>
+        <a href="program-international.html" class="inline-block bg-primary text-white px-6 py-2 rounded-lg font-semibold hover:bg-opacity-90 transition">
+          Lihat Detail
+        </a>
+      </div>
+
+      <!-- Target Class -->
+      <div class="bg-white shadow rounded-xl p-6 text-center">
+        <h3 class="text-xl font-bold text-primary mb-2">Target Class</h3>
+        <p class="text-gray-700 mb-4">Persiapan intensif SNBT, SIMAK, UTBK dengan mentor berpengalaman.</p>
+        <a href="target-class.html" class="inline-block bg-primary text-white px-6 py-2 rounded-lg font-semibold hover:bg-opacity-90 transition">
+          Lihat Detail
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+  <!-- Learning Options Section -->
+  <section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-12 text-primary">Mode Belajar</h2>
+      
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Offline -->
+        <div class="bg-white p-8 rounded-xl shadow-md text-center card-hover transition-smooth">
+          <div class="bg-primary text-white w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6 text-3xl">
+            <i class="fas fa-school"></i>
+          </div>
+          <h3 class="text-2xl font-bold mb-4">Offline</h3>
+          <p class="text-gray-600 mb-6">Belajar langsung di cabang BA-Learn Tambora & Jembatan Lima dengan fasilitas lengkap dan tutor berpengalaman</p>
+          <div class="bg-primary bg-opacity-10 text-primary p-3 rounded-lg">
+            <i class="fas fa-map-marker-alt mr-2"></i> 2 Lokasi di Jakarta Barat
+          </div>
+        </div>
+        
+        <!-- Online -->
+        <div class="bg-white p-8 rounded-xl shadow-md text-center card-hover transition-smooth">
+          <div class="bg-primary text-white w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6 text-3xl">
+            <i class="fas fa-laptop"></i>
+          </div>
+          <h3 class="text-2xl font-bold mb-4">Online</h3>
+          <p class="text-gray-600 mb-6">Belajar dari rumah melalui Zoom & Google Classroom dengan akses materi 24/7 dan rekaman kelas</p>
+          <div class="bg-primary bg-opacity-10 text-primary p-3 rounded-lg">
+            <i class="fas fa-video mr-2"></i> Zoom & Google Classroom
+          </div>
+        </div>
+        
+        <!-- Blended -->
+        <div class="bg-white p-8 rounded-xl shadow-md text-center card-hover transition-smooth">
+          <div class="bg-primary text-white w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6 text-3xl">
+            <i class="fas fa-blender-phone"></i>
+          </div>
+          <h3 class="text-2xl font-bold mb-4">Blended</h3>
+          <p class="text-gray-600 mb-6">Kombinasi optimal antara offline dan online dengan dukungan Android TV & WiFi 100Mbps untuk hasil belajar maksimal</p>
+          <div class="bg-primary bg-opacity-10 text-primary p-3 rounded-lg">
+            <i class="fas fa-tv mr-2"></i> Android TV & WiFi 100Mbps
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Membership Section -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-12 text-primary">Keanggotaan</h2>
+      
+      <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+        <!-- Silver -->
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover transition-smooth">
+          <div class="bg-gray-200 p-6 text-center">
+            <h3 class="text-2xl font-bold text-gray-700">Silver</h3>
+            <div class="my-4">
+              <span class="text-4xl font-bold text-primary">Rp 299K</span>
+              <span class="text-gray-600">/bulan</span>
+            </div>
+          </div>
+          <div class="p-6">
+            <ul class="space-y-3 mb-6">
+              <li class="flex items-center"><i class="fas fa-check text-secondary mr-2"></i> 4x Pertemuan Offline/Online</li>
+              <li class="flex items-center"><i class="fas fa-check text-secondary mr-2"></i> Akses Materi Dasar</li>
+              <li class="flex items-center"><i class="fas fa-check text-secondary mr-2"></i> Grup Diskusi</li>
+              <li class="flex items-center"><i class="fas fa-times text-gray-400 mr-2"></i> <span class="text-gray-400">Konsultasi Privat</span></li>
+              <li class="flex items-center"><i class="fas fa-times text-gray-400 mr-2"></i> <span class="text-gray-400">Tryout Eksklusif</span></li>
+            </ul>
+            <form action="paket-silver.html" method="get">
+  <button type="submit" class="w-full bg-gray-200 text-gray-700 py-3 rounded-lg font-bold hover:bg-gray-300 transition-smooth">
+    Pilih Paket
+  </button>
+</form>
+
+          </div>
+        </div>
+        
+        <!-- Gold Premium -->
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover transition-smooth transform scale-105 z-10 border-2 border-secondary">
+          <div class="bg-secondary p-6 text-center text-primary">
+            <h3 class="text-2xl font-bold">Gold Premium</h3>
+            <div class="my-4">
+              <span class="text-4xl font-bold">Rp 599K</span>
+              <span>/bulan</span>
+            </div>
+            <div class="bg-primary text-white text-sm py-1 px-3 rounded-full inline-block">
+              POPULER
+            </div>
+          </div>
+          <div class="p-6">
+            <ul class="space-y-3 mb-6">
+              <li class="flex items-center"><i class="fas fa-check text-secondary mr-2"></i> 8x Pertemuan (Offline/Online)</li>
+              <li class="flex items-center"><i class="fas fa-check text-secondary mr-2"></i> Akses Materi Premium</li>
+              <li class="flex items-center"><i class="fas fa-check text-secondary mr-2"></i> 2x Konsultasi Privat</li>
+              <li class="flex items-center"><i class="fas fa-check text-secondary mr-2"></i> Tryout Bulanan</li>
+              <li class="flex items-center"><i class="fas fa-check text-secondary mr-2"></i> WiFi 100Mbps</li>
+              <li class="flex items-center"><i class="fas fa-times text-gray-400 mr-2"></i> <span class="text-gray-400">Mentoring Eksklusif</span></li>
+            </ul>
+            <form action="paket-gold.html" method="get">
+  <button type="submit" class="w-full bg-primary text-white py-3 rounded-lg font-bold hover:bg-opacity-90 transition-smooth">
+    Pilih Paket
+  </button>
+</form>
+
+          </div>
+        </div>
+        
+        <!-- Platinum Priority -->
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover transition-smooth">
+          <div class="bg-primary p-6 text-center text-white">
+            <h3 class="text-2xl font-bold">Platinum Priority</h3>
+            <div class="my-4">
+              <span class="text-4xl font-bold">Rp 999K</span>
+              <span>/bulan</span>
+            </div>
+          </div>
+          <div class="p-6">
+            <ul class="space-y-3 mb-6">
+              <li class="flex items-center"><i class="fas fa-check text-secondary mr-2"></i> Pertemuan Unlimited</li>
+              <li class="flex items-center"><i class="fas fa-check text-secondary mr-2"></i> Akses Semua Materi</li>
+              <li class="flex items-center"><i class="fas fa-check text-secondary mr-2"></i> Konsultasi Privat 24/7</li>
+              <li class="flex items-center"><i class="fas fa-check text-secondary mr-2"></i> Tryout Eksklusif</li>
+              <li class="flex items-center"><i class="fas fa-check text-secondary mr-2"></i> Mentoring Eksklusif</li>
+              <li class="flex items-center"><i class="fas fa-check text-secondary mr-2"></i> Android TV & WiFi 100Mbps</li>
+            </ul>
+            <form action="paket-platinum.html" method="get">
+  <button type="submit" class="w-full bg-primary text-white py-3 rounded-lg font-bold hover:bg-opacity-90 transition-smooth">
+    Pilih Paket
+  </button>
+</form>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-12 text-primary">Apa Kata Mereka?</h2>
+      
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Testimonial 1 -->
+        <div class="testimonial-card p-6 rounded-xl border border-gray-100">
+          <div class="flex items-center mb-4">
+            <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Parent" class="w-12 h-12 rounded-full mr-4">
+            <div>
+              <h4 class="font-bold">Ibu Siti</h4>
+              <p class="text-gray-600 text-sm">Orang Tua Siswa SD</p>
+            </div>
+          </div>
+          <p class="text-gray-700 mb-4">"Anak saya yang tadinya kurang percaya diri dalam matematika, sekarang jadi lebih mengerti konsep dan nilainya meningkat signifikan setelah ikut program Reguler."</p>
+          <div class="text-secondary">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+        </div>
+        
+        <!-- Testimonial 2 -->
+        <div class="testimonial-card p-6 rounded-xl border border-gray-100">
+          <div class="flex items-center mb-4">
+            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Student" class="w-12 h-12 rounded-full mr-4">
+            <div>
+              <h4 class="font-bold">Andi</h4>
+              <p class="text-gray-600 text-sm">Siswa SMA Platinum</p>
+            </div>
+          </div>
+          <p class="text-gray-700 mb-4">"Kelas Target Class untuk UTBK sangat membantu! Tryout berkala dan pembahasan soal di Android TV membuat saya lebih siap menghadapi ujian."</p>
+          <div class="text-secondary">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+        </div>
+        
+        <!-- Testimonial 3 -->
+        <div class="testimonial-card p-6 rounded-xl border border-gray-100">
+          <div class="flex items-center mb-4">
+            <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Parent" class="w-12 h-12 rounded-full mr-4">
+            <div>
+              <h4 class="font-bold">Ibu Rina</h4>
+              <p class="text-gray-600 text-sm">Orang Tua Siswa Gold</p>
+            </div>
+          </div>
+          <p class="text-gray-700 mb-4">"Tutor-tutornya sangat sabar dan memahami kebutuhan anak. Program blended dengan WiFi cepat memudahkan anak belajar kapan saja."</p>
+          <div class="text-secondary">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-16 bg-primary text-white">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-3xl md:text-4xl font-bold mb-6">Siap Mulai Perjalanan Belajarmu?</h2>
+      <p class="text-xl mb-8 max-w-2xl mx-auto">Daftar sekarang dan dapatkan kelas percobaan gratis untuk pengalaman belajar terbaik di Tambora & Jembatan Lima!</p>
+      <div class="flex flex-col sm:flex-row justify-center gap-4">
+        <a href="daftar.html" class="bg-secondary text-primary px-4 py-2 rounded-lg font-medium hover:bg-opacity-90 transition-smooth hidden md:block">
+          Daftar Sekarang
+        </a>
+        <a href="hubungi-kami.html" class="bg-transparent border-2 border-white px-8 py-3 rounded-lg font-bold hover:bg-white hover:text-primary transition-smooth">
+  Hubungi Kami
+</a>
+
+</form>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-12">
+    <div class="container mx-auto px-4">
+      <div class="grid md:grid-cols-4 gap-8">
+        <div>
+          <div class="flex items-center space-x-2 mb-4">
+            <div class="bg-secondary text-primary p-2 rounded-lg font-bold text-xl">BA</div>
+            <span class="font-bold text-xl">Learn</span>
+          </div>
+          <p class="text-gray-400">Blended Acceleration Learns - Metode pembelajaran inovatif untuk siswa usia 6-18 tahun di Jakarta Barat.</p>
+          <div class="flex space-x-4 mt-4">
+           <!-- Instagram -->
+            <a href="https://www.instagram.com/blendedaccelerationlearn" target="_blank">
+              <img src="instagram.jpg" alt="Instagram" class="w-6 h-6 hover:opacity-80">
+            </a>
+
+            <!-- tiktok -->
+            <a href="https://www.tiktok.com/@blendedaccelerationlearn?_t=ZS-8xnbuu2i331&_r=1" target="_blank">
+              <img src="tiktok.png" alt="tiktok" class="w-6 h-6 hover:opacity-80">
+            </a>
+
+            <!-- WhatsApp -->
+            <a href="https://wa.me/62895344020464" target="_blank">
+              <img src="wa.jpg" alt="WhatsApp" class="w-6 h-6 hover:opacity-80">
+            </a>
+          </div>
+        </div>
+        
+       <section class="bg-gray-900 text-white py-16">
+        <div class="max-w-4xl mx-auto px-6">
+          <h2 class="text-3xl font-bold mb-6 text-center">Lokasi Kami</h2>
+
+          <div class="bg-gray-800 p-6 rounded-xl shadow-lg">
+            <h3 class="text-xl font-semibold mb-2">📍 Tambora</h3>
+            <p class="mb-4 text-sm text-gray-300">Jl. Pendidikan No. 123, Jakarta Barat</p>
+
+            <iframe 
+              src="https://www.google.com/maps?q=Jl.%20Pendidikan%20No.%20123%20Jakarta%20Barat&output=embed"
+              width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+              class="rounded-lg shadow-md">
+            </iframe>
+          </div>
+        </div>
+      </section>
+
+        <div>
+          <h4 class="text-lg font-bold mb-4">Jam Operasional</h4>
+          <ul class="space-y-2 text-gray-400">
+            <li class="flex items-center">
+              <i class="far fa-clock mr-3"></i>
+              <span>Senin-Jumat: 08:00 - 20:00</span>
+            </li>
+            <li class="flex items-center">
+              <i class="far fa-clock mr-3"></i>
+              <span>Sabtu: 08:00 - 17:00</span>
+            </li>
+            <li class="flex items-center">
+              <i class="far fa-clock mr-3"></i>
+              <span>Minggu: Tutup</span>
+            </li>
+          </ul>
+        </div>
+        
+        <div>
+          <h4 class="text-lg font-bold mb-4">Newsletter</h4>
+          <p class="text-gray-400 mb-4">Dapatkan informasi terbaru tentang program dan promo kami.</p>
+          <form class="flex">
+            <input type="email" placeholder="Email Anda" class="px-4 py-2 rounded-l-lg w-full text-gray-800">
+            <button class="bg-secondary text-primary px-4 py-2 rounded-r-lg">
+              <i class="fas fa-paper-plane"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+      
+      <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+        <p>&copy; 2025 BA-Learn. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
